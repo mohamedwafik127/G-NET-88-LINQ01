@@ -113,5 +113,17 @@ public class Program
         //    Console.WriteLine(item);
         //}
         #endregion
+
+        #region Question_09
+
+        //9. Get all products from the "Beverages" category, sorted by UnitsInStock descending. Print name and stock.
+
+        //var Result = ProductList.Where(p => p.Category == "Beverages").OrderByDescending(s => s.UnitsInStock);
+
+        //foreach (var item in Result)
+        //{
+        //    Console.WriteLine($"{item.ProductName} - Stock: {item.UnitsInStock}");
+        //}
+        #endregion
     }
 }
