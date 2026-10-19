@@ -153,5 +153,18 @@ public class Program
         //}
         #endregion
 
+        #region Question_12
+
+        //12. Sort first by word length and then by a case-insensitive sort of the words in an array.
+
+        //string[] Arr = { "aPPLE", "AbAcUs", "bRaNcH", "BlUeBeRrY", "ClOvEr", "cHeRry" };
+
+        //var Result = Arr.OrderBy(s => s.Length).ThenBy(s => s, StringComparer.OrdinalIgnoreCase);
+
+        //foreach (var item in Result)
+        //{
+        //    Console.WriteLine(item);
+        //}
+        #endregion
     }
 }
