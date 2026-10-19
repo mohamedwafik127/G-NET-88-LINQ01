@@ -56,7 +56,6 @@ public class Program
 
         #endregion
 
-
         #region Question_05
 
         //5. Get all products that are in stock (UnitsInStock > 0) and belong to the "Condiments" category.
@@ -68,6 +67,27 @@ public class Program
         //    Console.WriteLine(item);
         //}
 
+        #endregion
+
+        #region Question_06
+        //6.Create a new anonymous type with three properties:
+        //● Name → the product name
+        //● Price → the unit price
+        //● StockStatus → a string: "Available" if UnitsInStock > 0,
+        //otherwise "Out of Stock"
+        //● Print the result.
+
+        //var Result = ProductList.Select(s => new
+        //{
+        //    Name = s.ProductName,
+        //    Price = s.UnitPrice,
+        //    StockStatus = s.UnitsInStock > 0 ? "Available" : "Out of Stock"
+        //});
+
+        //foreach (var item in Result)
+        //{
+        //    Console.WriteLine($"{item.Name} - {item.Price} - {item.StockStatus}");
+        //}
         #endregion
     }
 }
