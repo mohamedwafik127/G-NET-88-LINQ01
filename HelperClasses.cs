@@ -20,6 +20,23 @@ public class HelperClass
         }
     }
 
+    public static double ReadDouble(string prompt)
+    {
+        double result;
+        while (true)
+        {
+            Console.Write(prompt);
+            string input = Console.ReadLine();
+
+            if (double.TryParse(input, out result))
+            {
+                return result;
+            }
+
+            Console.WriteLine("Invalid number, please try again.");
+        }
+    }
+
     public static string ReadNonEmptyString(string prompt)
     {
         string input;
