@@ -89,5 +89,17 @@ public class Program
         //    Console.WriteLine($"{item.Name} - {item.Price} - {item.StockStatus}");
         //}
         #endregion
+
+        #region Question_07
+
+        //7. Print each product's name along with its position (1-based) in the list. Expected format: 1.Chai, 2.Chang, etc.
+
+        //var Result = ProductList.Select(p => p.ProductName).Select((s,i) => $"{i+1}. {s}");
+
+        //foreach (var item in Result)
+        //{
+        //    Console.WriteLine(item);
+        //}
+        #endregion
     }
 }
