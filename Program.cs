@@ -17,5 +17,18 @@ public class Program
         //    Console.WriteLine($"{item.ProductName} - {item.UnitPrice}");
         //}
         #endregion
+
+        #region Question_02
+
+        //2. Get a list of only the product names from ProductList. Print each name.
+
+        //var ProductsName = ProductList.Select(s => s.ProductName).ToList();
+
+        //foreach (var item in ProductsName)
+        //{
+        //    Console.WriteLine(item);
+        //}
+
+        #endregion
     }
 }
