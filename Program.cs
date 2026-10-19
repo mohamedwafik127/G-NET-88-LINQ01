@@ -125,5 +125,20 @@ public class Program
         //    Console.WriteLine($"{item.ProductName} - Stock: {item.UnitsInStock}");
         //}
         #endregion
+
+        #region Question_10
+
+        //10. Using QUERY SYNTAX with a compound from clause, list all orders placed in 1997 or later showing CustomerID and OrderDate.
+
+        //var Result = from c in CustomerList
+        //             from o in c.Orders
+        //             where o.OrderDate.Year >= 1997
+        //             select new { c.CustomerID, o.OrderDate };
+
+        //foreach (var item in Result)
+        //{
+        //    Console.WriteLine($"{item.CustomerID} - {item.OrderDate}");
+        //}
+        #endregion
     }
 }
