@@ -55,5 +55,19 @@ public class Program
         //}
 
         #endregion
+
+
+        #region Question_05
+
+        //5. Get all products that are in stock (UnitsInStock > 0) and belong to the "Condiments" category.
+
+        //var Result = ProductList.Where(s => s.UnitsInStock > 0 && s.Category == "Spices & Condiments");
+
+        //foreach (var item in Result)
+        //{
+        //    Console.WriteLine(item);
+        //}
+
+        #endregion
     }
 }
