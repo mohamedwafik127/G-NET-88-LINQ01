@@ -42,5 +42,18 @@ public class Program
         //    Console.WriteLine($"{item.ProductName} - {item.UnitPrice}");
         //}
         #endregion
+
+        #region Question_04
+
+        //4. Get all products where UnitPrice is between 10 and 30
+
+        //var Result = ProductList.Where(s => s.UnitPrice > 10 && s.UnitPrice < 30);
+
+        //foreach (var item in Result)
+        //{
+        //    Console.WriteLine(item);
+        //}
+
+        #endregion
     }
 }
