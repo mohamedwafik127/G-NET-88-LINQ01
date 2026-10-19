@@ -166,5 +166,19 @@ public class Program
         //    Console.WriteLine(item);
         //}
         #endregion
+
+        #region Question_13
+
+        //13. Create a list of all digits in the array whose second letter is 'i' that is reversed from the order in the original array.
+
+        //string[] Digits = { "zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine" };
+
+        //var Result = Digits.Where(s => s[1] == 'i').Reverse().ToList();
+
+        //foreach (var item in Result)
+        //{
+        //    Console.WriteLine(item);
+        //}
+        #endregion
     }
 }
