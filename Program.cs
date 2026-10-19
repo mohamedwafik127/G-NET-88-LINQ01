@@ -140,5 +140,18 @@ public class Program
         //    Console.WriteLine($"{item.CustomerID} - {item.OrderDate}");
         //}
         #endregion
+
+        #region Question_11
+
+        //11. Show position number alongside ProductName
+
+        //var Result = ProductList.Select(p => p.ProductName).Select((s, i) => $"{i + 1}. {s}");
+
+        //foreach (var item in Result)
+        //{
+        //    Console.WriteLine(item);
+        //}
+        #endregion
+
     }
 }
