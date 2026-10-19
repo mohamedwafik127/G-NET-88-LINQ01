@@ -1,9 +1,184 @@
-﻿public class Program
+﻿using System.Drawing;
+using System.Xml.Linq;
+using static HelperClass;
+using static LINQ.DataSources.Source;
+public class Program
 {
     public static void Main(string[] args)
     {
 
+        #region Question_01
+        //1. Get all products from the "Seafood" category. Print each product's name and price.
 
+        //var Seafood = ProductList.Where(s => s.Category == "Seafood");
 
+        //foreach (var item in Seafood)
+        //{
+        //    Console.WriteLine($"{item.ProductName} - {item.UnitPrice}");
+        //}
+        #endregion
+
+        #region Question_02
+
+        //2. Get a list of only the product names from ProductList. Print each name.
+
+        //var ProductsName = ProductList.Select(s => s.ProductName).ToList();
+
+        //foreach (var item in ProductsName)
+        //{
+        //    Console.WriteLine(item);
+        //}
+
+        #endregion
+
+        #region Question_03
+
+        //3. Sort all products by UnitPrice (ascending). Print each product's name and price.
+
+        //var Result = ProductList.OrderBy(s => s.UnitPrice);
+
+        //foreach (var item in Result)
+        //{
+        //    Console.WriteLine($"{item.ProductName} - {item.UnitPrice}");
+        //}
+        #endregion
+
+        #region Question_04
+
+        //4. Get all products where UnitPrice is between 10 and 30
+
+        //var Result = ProductList.Where(s => s.UnitPrice > 10 && s.UnitPrice < 30);
+
+        //foreach (var item in Result)
+        //{
+        //    Console.WriteLine(item);
+        //}
+
+        #endregion
+
+        #region Question_05
+
+        //5. Get all products that are in stock (UnitsInStock > 0) and belong to the "Condiments" category.
+
+        //var Result = ProductList.Where(s => s.UnitsInStock > 0 && s.Category == "Spices & Condiments");
+
+        //foreach (var item in Result)
+        //{
+        //    Console.WriteLine(item);
+        //}
+
+        #endregion
+
+        #region Question_06
+        //6.Create a new anonymous type with three properties:
+        //● Name → the product name
+        //● Price → the unit price
+        //● StockStatus → a string: "Available" if UnitsInStock > 0,
+        //otherwise "Out of Stock"
+        //● Print the result.
+
+        //var Result = ProductList.Select(s => new
+        //{
+        //    Name = s.ProductName,
+        //    Price = s.UnitPrice,
+        //    StockStatus = s.UnitsInStock > 0 ? "Available" : "Out of Stock"
+        //});
+
+        //foreach (var item in Result)
+        //{
+        //    Console.WriteLine($"{item.Name} - {item.Price} - {item.StockStatus}");
+        //}
+        #endregion
+
+        #region Question_07
+
+        //7. Print each product's name along with its position (1-based) in the list. Expected format: 1.Chai, 2.Chang, etc.
+
+        //var Result = ProductList.Select(p => p.ProductName).Select((s,i) => $"{i+1}. {s}");
+
+        //foreach (var item in Result)
+        //{
+        //    Console.WriteLine(item);
+        //}
+        #endregion
+
+        #region Question_08
+
+        //8. Sort ProductList by Category ascending, then within each category, sort by UnitPrice descending.
+
+        //var Result = ProductList.OrderBy(s => s.Category).ThenByDescending(p => p.UnitPrice);
+
+        //foreach (var item in Result)
+        //{
+        //    Console.WriteLine(item);
+        //}
+        #endregion
+
+        #region Question_09
+
+        //9. Get all products from the "Beverages" category, sorted by UnitsInStock descending. Print name and stock.
+
+        //var Result = ProductList.Where(p => p.Category == "Beverages").OrderByDescending(s => s.UnitsInStock);
+
+        //foreach (var item in Result)
+        //{
+        //    Console.WriteLine($"{item.ProductName} - Stock: {item.UnitsInStock}");
+        //}
+        #endregion
+
+        #region Question_10
+
+        //10. Using QUERY SYNTAX with a compound from clause, list all orders placed in 1997 or later showing CustomerID and OrderDate.
+
+        //var Result = from c in CustomerList
+        //             from o in c.Orders
+        //             where o.OrderDate.Year >= 1997
+        //             select new { c.CustomerID, o.OrderDate };
+
+        //foreach (var item in Result)
+        //{
+        //    Console.WriteLine($"{item.CustomerID} - {item.OrderDate}");
+        //}
+        #endregion
+
+        #region Question_11
+
+        //11. Show position number alongside ProductName
+
+        //var Result = ProductList.Select(p => p.ProductName).Select((s, i) => $"{i + 1}. {s}");
+
+        //foreach (var item in Result)
+        //{
+        //    Console.WriteLine(item);
+        //}
+        #endregion
+
+        #region Question_12
+
+        //12. Sort first by word length and then by a case-insensitive sort of the words in an array.
+
+        //string[] Arr = { "aPPLE", "AbAcUs", "bRaNcH", "BlUeBeRrY", "ClOvEr", "cHeRry" };
+
+        //var Result = Arr.OrderBy(s => s.Length).ThenBy(s => s, StringComparer.OrdinalIgnoreCase);
+
+        //foreach (var item in Result)
+        //{
+        //    Console.WriteLine(item);
+        //}
+        #endregion
+
+        #region Question_13
+
+        //13. Create a list of all digits in the array whose second letter is 'i' that is reversed from the order in the original array.
+
+        //string[] Digits = { "zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine" };
+
+        //var Result = Digits.Where(s => s[1] == 'i').Reverse().ToList();
+
+        //foreach (var item in Result)
+        //{
+        //    Console.WriteLine(item);
+        //}
+        #endregion
     }
 }
